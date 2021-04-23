@@ -14,33 +14,26 @@ ops = list(map(int, input().split()))
 max_num = float('-inf')
 min_num = float('inf')
 
-def dfs(nums, i, add, sub, mul, div, total):
+def back_tracking(nums, i, add, sub, mul, div, total):
     global N, max_num, min_num
-    i += 1
     if i == N:
-        # 초기화
-        i = 0
-        add, sub, mul, div = ops[0], ops[1], ops[2], ops[3]
         # 계산 값과 최대/최소 값비교 
         max_num = max(max_num, total)
         min_num = min(min_num, total)
         return
         
     if add > 0:
-        dfs(nums, i, add-1, sub, mul, div, total+nums[i])
+        back_tracking(nums, i+1, add-1, sub, mul, div, total+nums[i])
     if sub > 0:
-        dfs(nums, i, add, sub-1, mul, div, total-nums[i])
+        back_tracking(nums, i+1, add, sub-1, mul, div, total-nums[i])
     if mul > 0:
-        dfs(nums, i, add, sub, mul-1, div, total*nums[i])
+        back_tracking(nums, i+1, add, sub, mul-1, div, total*nums[i])
     if div > 0:
         if total < 0:
-            total = (abs(total) // nums[i]) * (-1)
+            back_tracking(nums, i+1, add, sub, mul, div-1, -(abs(total) // nums[i]))
         else:
-            total = total // nums[i]
-        dfs(nums, i, add, sub, mul, div-1, total)
-    else:
-        return
+            back_tracking(nums, i+1, add, sub, mul, div-1, total // nums[i])
 
-dfs(nums, 0, ops[0], ops[1], ops[2], ops[3], nums[0])
+back_tracking(nums, 1, ops[0], ops[1], ops[2], ops[3], nums[0])
 print(max_num)
 print(min_num)
