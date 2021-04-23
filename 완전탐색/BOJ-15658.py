@@ -11,35 +11,36 @@ input = stdin.readline
 N = int(input())
 nums = list(map(int, input().split()))
 ops = list(map(int, input().split()))
-ADD, SUB, MUL, DIV = 0, 1, 2, 3
-
-def get_operator(ops):
-    operators = []
-    for i, op in enumerate(ops):
-        operators.extend([i] * op)
-    operators = list(permutations(operators, N-1))
-    return operators
-
-operators = get_operator(ops)
-
 max_num = float('-inf')
 min_num = float('inf')
-for ops in operators:
-    total = nums[0]
-    #print(ops)
-    for i, num in enumerate(nums[1:]):
-        if ops[i] == ADD:
-            total += num
-        elif ops[i] == SUB:
-            total -= num
-        elif ops[i] == MUL:
-            total *= num
-        elif ops[i] == DIV:
-            total //= num
-    max_num = max(max_num, total)
-    min_num = min(min_num, total)
-    #print(nums, ops, total)
-    
+
+def dfs(nums, i, add, sub, mul, div, total):
+    global N, max_num, min_num
+    i += 1
+    if i == N:
+        # 초기화
+        i = 0
+        add, sub, mul, div = ops[0], ops[1], ops[2], ops[3]
+        # 계산 값과 최대/최소 값비교 
+        max_num = max(max_num, total)
+        min_num = min(min_num, total)
+        return
         
+    if add > 0:
+        dfs(nums, i, add-1, sub, mul, div, total+nums[i])
+    if sub > 0:
+        dfs(nums, i, add, sub-1, mul, div, total-nums[i])
+    if mul > 0:
+        dfs(nums, i, add, sub, mul-1, div, total*nums[i])
+    if div > 0:
+        if total < 0:
+            total = (abs(total) // nums[i]) * (-1)
+        else:
+            total = total // nums[i]
+        dfs(nums, i, add, sub, mul, div-1, total)
+    else:
+        return
+
+dfs(nums, 0, ops[0], ops[1], ops[2], ops[3], nums[0])
 print(max_num)
 print(min_num)
