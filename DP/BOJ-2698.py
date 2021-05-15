@@ -1,6 +1,6 @@
 # BOJ-2698.py
 # 인접한 비트의 개수
-# n개의 수열, 인접한 비트의 개수 k < n 
+# n개의 수열(비트 0or1), 인접한 비트의 개수 k < n
 
 N = 101
 series = [[[0, 0] for k in range(N)] for n in range(N)]
