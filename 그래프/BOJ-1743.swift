@@ -44,6 +44,9 @@ var label = 2
 var max_size = 0
 for y in 0..<line[0] {
     for x in 0..<line[1] {
+        if graph[y][x] != 1 {
+            continue
+        }
         let size = dfs(graph: &graph, y: y, x: x, label: label)
         max_size = max(size, max_size)
         if size > 0 {
