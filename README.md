@@ -7,7 +7,7 @@
 - [**미친 로봇**](https://github.com/algorithmFor2021/dain_song/blob/main/완전탐색/BOJ-1405.py)
 - [**연산자 끼워넣기(2)**](https://github.com/algorithmFor2021/dain_song/blob/main/완전탐색/BOJ-15658.py)
 
-# 완전탐색 추가 문제
+### 완전탐색 추가 문제
 - [**도영이가 만든 맛있는 음식**](https://github.com/algorithmFor2021/dain_song/blob/main/완전탐색/BOJ-2961.py)
 
 # 이분탐색 5/1 
@@ -18,7 +18,7 @@
 - [**숫자 카드**](https://github.com/algorithmFor2021/dain_song/blob/main/이분탐색/BOJ-10815.py)
 - [**나무 자르기**](https://github.com/algorithmFor2021/dain_song/blob/main/이분탐색/BOJ-2805.py)
 
-# 이분탐색 추가 문제
+### 이분탐색 추가 문제
 - [**공유기 설치**](https://github.com/algorithmFor2021/dain_song/blob/main/이분탐색/BOJ-2110.py)
 
 
@@ -30,7 +30,7 @@
 - [**주유소**](https://github.com/algorithmFor2021/dain_song/blob/main/그리디/BOJ-13305.py)
 - [**배**](https://github.com/algorithmFor2021/dain_song/blob/main/그리디/BOJ-1092.py)
 
-# 그리디 추가문제
+### 그리디 추가문제
 - [**폴리노미오**](https://github.com/algorithmFor2021/dain_song/blob/main/그리디/BOJ-1343.py)
 - [**그리디**](https://github.com/algorithmFor2021/dain_song/blob/main/그리디/BOJ-12904.py)
 
@@ -42,7 +42,7 @@
 - [**인접한 비트의 개수**](https://github.com/algorithmFor2021/dain_song/blob/main/DP/BOJ-2698.py)
 - [**가장 큰 정사각형**](https://github.com/algorithmFor2021/dain_song/blob/main/DP/BOJ-1915.py)
 
-# DP 추가 문제
+### DP 추가 문제
 - [**줄어들지않아**](https://github.com/algorithmFor2021/dain_song/blob/main/DP/BOJ-2688.py)
 
 # 문자열 5/22
@@ -53,7 +53,7 @@
 - [**추월**](https://github.com/algorithmFor2021/dain_song/blob/main/문자열/BOJ-2002.py)
 - [**개미굴**](https://github.com/algorithmFor2021/dain_song/blob/main/문자열/BOJ-14725.py)
 
-# 문자열 추가 문제
+### 문자열 추가 문제
 - [팰린드롬 만들기](https://github.com/algorithmFor2021/dain_song/blob/main/문자열/BOJ-1213.py)
 - [AC](https://github.com/algorithmFor2021/dain_song/blob/main/문자열/BOJ-5430.py)
 
