@@ -54,8 +54,8 @@
 - [**개미굴**](https://github.com/algorithmFor2021/dain_song/blob/main/문자열/BOJ-14725.py)
 
 ### 문자열 추가 문제
-- [팰린드롬 만들기](https://github.com/algorithmFor2021/dain_song/blob/main/문자열/BOJ-1213.py)
-- [AC](https://github.com/algorithmFor2021/dain_song/blob/main/문자열/BOJ-5430.py)
+- [**팰린드롬 만들기**](https://github.com/algorithmFor2021/dain_song/blob/main/문자열/BOJ-1213.py)
+- [**AC**](https://github.com/algorithmFor2021/dain_song/blob/main/문자열/BOJ-5430.py)
 
 # 그래프 5/29
-- [음식물 피하기]
+- [**음식물 피하기**](https://github.com/algorithmFor2021/dain_song/blob/main/그래프/BOJ-1743.swift)
