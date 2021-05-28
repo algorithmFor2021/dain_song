@@ -13,6 +13,8 @@ def prim(node):
     heap = [] # 빠르게 최솟값을 찾기 위한 heap (리스트형태)
     visited[node] = True
     total = 0
+    count = 1
+
     # 해당 노드에 연결된 연결선을 추가한다.
     for a in adj[node]:
         heapq.heappush(heap, a)
@@ -22,11 +24,15 @@ def prim(node):
         if not visited[node]:
             visited[node] = True
             total += cost
+            count += 1
+
             # 해당 노드에 연결된 연결선을 추가한다.
             for a in adj[node]:
                 heapq.heappush(heap, a)
         
-    return total
+        # 연결선이 N개 선택된 경우 종료한다.
+        if count == N:
+            return total
         
 N = int(input())
 M = int(input())
