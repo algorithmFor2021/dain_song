@@ -28,8 +28,4 @@ dfs(tree, visited, a, b, 0)
 if result > 0:
     print(result)
 else:
-    dfs(tree, visited, b, a, 0)
-    if result > 0:
-        print(result)
-    else:
-        print(-1)
+    print(-1)
