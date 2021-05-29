@@ -4,15 +4,14 @@
 result = 0
 def dfs(tree, visited, a, b, degree):
     global result
-    if visited[a]:
-        return 0
     #print(a, tree[a])
     if a == b:
         result = degree
         return 
     visited[a] = True
     for v in tree[a]:
-        dfs(tree, visited, v, b, degree+1)
+        if not visited[v]:
+            dfs(tree, visited, v, b, degree+1)
     
 
 n = int(input())
