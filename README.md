@@ -81,5 +81,5 @@
 - [**강의실 배정**](https://github.com/algorithmFor2021/dain_song/blob/main/심화알고리즘/BOJ-11000.swift)
 
 ### 추가 문제
-- [**볼링 점수 계산(구현,문자열)**]()
-- [**구간 합 구하기 5(누적합)**]()
+- [**볼링 점수 계산(구현,문자열)**](https://github.com/algorithmFor2021/dain_song/blob/main/심화알고리즘/BOJ-17215.swift)
+- [**구간 합 구하기 5(누적합)**](https://github.com/algorithmFor2021/dain_song/blob/main/심화알고리즘/BOJ-11660.swift)
