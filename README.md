@@ -60,4 +60,26 @@
 - [**AC**](https://github.com/algorithmFor2021/dain_song/blob/main/문자열/BOJ-5430.py)
 
 ## 그래프 5/29
-- [**음식물 피하기**](https://github.com/algorithmFor2021/dain_song/blob/main/그래프/BOJ-1743.swift)
+- [**작업**]()
+- [**도시 분할 계획**]()
+- [**음식물 피하기(Swift)**](https://github.com/algorithmFor2021/dain_song/blob/main/그래프/BOJ-1743.swift)
+- [**녹색 옷 입은 애가 젤다지?**](https://github.com/algorithmFor2021/dain_song/blob/main/그래프/BOJ-4485.py)
+- [**최소비용 구하기 2**](https://github.com/algorithmFor2021/dain_song/blob/main/그래프/BOJ-11779.py)
+- [**네트워크 연결**](https://github.com/algorithmFor2021/dain_song/blob/main/그래프/BOJ-1922.py)
+
+### 그래프 추가 문제
+- [**트리(Python)**](https://github.com/algorithmFor2021/dain_song/blob/main/그래프/BOJ-4803.py)
+- [**트리(Swift)**](https://github.com/algorithmFor2021/dain_song/blob/main/그래프/BOJ-4803.swift)
+- [**촌수계산**](https://github.com/algorithmFor2021/dain_song/blob/main/그래프/BOJ-2644.py)
+
+## 심화알고리즘 6/5
+- [**외판원 순회**]()
+- [**회의준비**](https://github.com/algorithmFor2021/dain_song/blob/main/심화알고리즘/BOJ-2610.swift)
+- [**소수의 연속합**](https://github.com/algorithmFor2021/dain_song/blob/main/심화알고리즘/BOJ-1644.swift)
+- [**여행 가자**](https://github.com/algorithmFor2021/dain_song/blob/main/심화알고리즘/BOJ-1976.swift)
+- [**개똥벌레**](https://github.com/algorithmFor2021/dain_song/blob/main/심화알고리즘/BOJ-3020.swift)
+- [**강의실 배정**](https://github.com/algorithmFor2021/dain_song/blob/main/심화알고리즘/BOJ-11000.swift)
+
+### 추가 문제
+- [**볼링 점수 계산(구현,문자열)**]()
+- [**구간 합 구하기 5(누적합)**]()
