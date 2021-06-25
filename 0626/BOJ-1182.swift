@@ -4,11 +4,6 @@ let N = input[0], S = input[1]
 let series = readLine()!.split(separator: " ").map{Int(String($0))!}
 
 func findNumber(i: Int, sum: Int) -> Int {
-
-    if i > series.count {
-        return 0
-    }
-
     var count = 0
     if sum == S {
         count += 1
