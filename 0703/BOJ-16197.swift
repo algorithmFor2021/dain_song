@@ -48,20 +48,16 @@ func BOJ_16197() {
             
             // 하나만 떨어진 경우 "정답"
             // BFS 에서는 가장먼저 나온 경우가 가장 짧은 거리이므로 바로 return
-            if !(isOut(c1) && isOut(c2)) && (isOut(c1) || isOut(c2)) {
+            if (!isOut(c1) && isOut(c2)) || (isOut(c1) && !isOut(c2)) {
                 print(currentTime)
                 return
             }
             
             for i in 0..<4 {
                 var next1 = Coord(c1.y + dy[i], c1.x + dx[i])
-                var next2 = Coord(c2.y + dy[i], c2.x + dx[i])
-                
-                // 둘 다 떨어진 경우 무시
-                if isOut(next1) && isOut(next2) { continue }
-                
-                // 둘 다 벽인 경우 무시
-                if isWall(next1) && isWall(next2) { continue }
+                var next2 = Coord(c2.y + dy[i], c2.x + dx[i])                
+                if isOut(next1) && isOut(next2) { continue } // 둘 다 떨어진 경우 무시
+                if isWall(next1) && isWall(next2) { continue } // 둘 다 벽인 경우 무시
                 
                 // 하나만 벽인 경우 좌표를 기존값으로 변경
                 if isWall(next1) {
